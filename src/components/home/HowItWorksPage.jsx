@@ -2,7 +2,7 @@ import { Row, Col } from 'antd';
 
 const HowItWorks = () => {
   return (
-    <div className="py-12 bg-gray-50 text-center">
+    <div className="py-12 lg:container bg-gray-50 text-center">
       <h2 className="text-3xl font-bold text-orange-600 mb-4">How Ghorbar Works</h2>
       <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
         We make it simple to find, purchase, or sell your property with our streamlined platform and expert agents.

@@ -3,14 +3,17 @@
 "use client";
  
 import Banner from "@/components/home/Banner";
-import DoctorTeamPage from "@/components/home/DoctorTeam";
-import FitnessPage from "@/components/home/FitnessPage";
+import ExploreDreamHome from "@/components/home/ExploreDreamHome";
 import HowItWorksPage from "@/components/home/HowItWorksPage";
-import PlansPage from "@/components/home/PlanPage";
-import TrainersTeam from "@/components/home/TrainersTeam";
-import TrainingProgram from "@/components/home/TrainingProgram";
-import WorkoutClassPage from "@/components/home/WorkoutClass";
+
 import React, { useState } from "react";
+import NewListing from "@/components/home/NewListing";
+import FeaturedProperties from "@/components/home/FeaturedProperties";
+import DreamHomeLanding from "@/components/home/DreamHomeLanding";
+import AgentList from "@/components/home/AgentList";
+import NewsletterSignup from "@/components/home/NewsletterSignup";
+import Contact from "@/components/home/Contact";
+ 
  
 
 export default function Home() {
@@ -25,12 +28,16 @@ export default function Home() {
     
        <Banner />
        <HowItWorksPage />
-       <FitnessPage />
-       <DoctorTeamPage />
-       <TrainersTeam />
-       <PlansPage />
-       <WorkoutClassPage />
-       <TrainingProgram />
+       {/* <FitnessPage /> */}
+       <ExploreDreamHome />
+       <NewListing />
+       <FeaturedProperties />
+       <DreamHomeLanding />
+       <AgentList />
+       <NewsletterSignup />
+       <Contact />
+     
+      
     
       
     </div>

@@ -1,4 +1,4 @@
-import PricingPlans from '@/components/home/PlanPage';
+import PricingPlans from '@/components/home/FeaturedProperties';
 import React from 'react';
 
 const page = () => {

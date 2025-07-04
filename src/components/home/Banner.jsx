@@ -2,10 +2,15 @@
 
 
 "user client"
-import { Button } from 'antd'
-import { ArrowRightOutlined, PlayCircleOutlined } from '@ant-design/icons'
 
+import { Button } from 'antd'
+import { ArrowRightOutlined, PlayCircleOutlined } from '@ant-design/icons' 
 export default function Banner() {
+
+// import { Bricolage_Grotesque } from 'next/font/google';
+
+ 
+
   const stats = [
     { number: '2,500+', label: 'Properties' },
     { number: '1,800+', label: 'Happy Clients' },
@@ -13,18 +18,18 @@ export default function Banner() {
   ]
 
   return (
-    <section className="relative min-h-scree h-[1200px] ">
+    <section className="relative ">
       {/* Background Image */}
   <div 
-    className="absolute inset-0 w-full h-[1000px] pb-6 bg-no-repeat bg-cover bg-center"
+    className="absolute inset-0 w-full pb-6 h-full bg-no-repeat bg-right"
     style={{
       backgroundImage: "url('/images/bgimage1.png')"
     }}
   />
       {/* Overlay */}
-      <div className="absolute inset-0 " />
+      <div className="absolute inset-0 ml-12 "  />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 lg:pt-32">
+      <div className="relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-20 lg:pt-32">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center min-h-[calc(100vh-5rem)]">
           {/* Content */}
           <div className="text-center lg:text-left order-2 lg:order-1">
@@ -55,26 +60,26 @@ export default function Banner() {
             </p>
 
             {/* Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
+            <div className="md:flex  gap-4 justify-center lg:justify-start mb-12">
               <Button
                 type="primary"
                 size="large"
                 icon={<ArrowRightOutlined />}
-                className="bg-[#ff6b35] hover:bg-[#e55a2b] border-[#ff6b35] hover:border-[#e55a2b] rounded-full px-8 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                className="bg-[#ff6b35] my-2 hover:bg-[#e55a2b] border-[#ff6b35] hover:border-[#e55a2b] rounded-full px-8 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
               >
                 Explore Properties
               </Button>
               <Button
                 size="large"
                 icon={<PlayCircleOutlined />}
-                className="border-[#ff6b35] text-[#ff6b35] hover:bg-[#ff6b35] hover:text-white rounded-full px-8 py-6 text-lg font-semibold transition-all duration-300 hover:-translate-y-1"
+                className="border-[#ff6b35] my-2 text-[#ff6b35] hover:bg-[#ff6b35] hover:text-white rounded-full px-8 py-6 text-lg font-semibold transition-all duration-300 hover:-translate-y-1"
               >
                 Learn More
               </Button>
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-8 max-w-md mx-auto lg:mx-0">
+            <div className="grid grid-cols-3 mb-12 gap-8 max-w-md mx-auto lg:mx-0">
               {stats.map((stat, index) => (
                 <div key={index} className="text-center">
                   <div className="text-2xl lg:text-3xl font-bold text-[#ff6b35] mb-1">
@@ -91,14 +96,7 @@ export default function Banner() {
           {/* Image */}
          
         </div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-white/60 rounded-full p-1">
-          <div className="w-1 h-3 bg-white/60 rounded-full mx-auto animate-pulse"></div>
-        </div>
-      </div>
+      </div> 
     </section>
   )
 }
